@@ -1,0 +1,254 @@
+/*
+    gris foncé (fond) : #444444, #272625
+    gris moyen (items) : #8d8d8d;
+    gris clair (textes) : #ececec
+    orange : #F39C12;
+*/
+
+
+/* ----- GENERAL ----- */
+
+body{
+    /*max-width : 100%;*/
+    /*min-width: 240px;*/
+    /*height: 100vh;*/
+    /*overflow: hidden;*/
+    background-color: #222;
+    color: #ececec;
+}
+
+@media (min-width: 550px) {
+    .nomargin{
+        width: 95.333333333% !important ;
+    }
+}
+
+
+/* ----- UTILITAIRE ----- */
+
+.center{
+    text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.nomargin{
+    margin-left: 0px;
+}
+
+.marginRight{
+    margin-right: 4%;
+    width: 26.66666667% !important;
+}
+
+
+/* ----- TYPOGRAPHIE ----- */
+
+
+
+
+
+
+/* ----- TITRES ----- */
+
+h1.titre{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 30pt;
+    border-right: 30px solid #F39C12;
+    -moz-box-shadow: 0px 10px 10px -2px #000000;
+    -webkit-box-shadow: 0px 10px 10px -2px #000000;
+    -o-box-shadow: 0px 10px 10px -2px #000000;
+    box-shadow: 0px 10px 10px -2px #000000;
+    height: 100%;
+}
+
+
+/* ----- TEXTES ----- */
+
+.texte p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#CVlink{
+    text-align: center;
+}
+
+#CVlink{
+    border-radius: 0px;
+    transition: all 0.3s;
+    color: #8d8d8d;
+}
+
+#CVlink:hover{
+    border: 1px solid #F39C12;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+/* ----- LIENS ----- */
+a{
+    text-decoration: none;
+    color: #F39C12;
+}
+
+a:hover{
+    color: #F39C12;
+    font-weight: bold;
+}
+
+
+
+/* ----- NAVBARRE ----- */
+
+#logo{
+    max-height: 100px;
+    margin-top: 10px;
+}
+
+#linkedin{
+    background: url("../img/linkedin.png") no-repeat center center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-top: 30vh;
+    transition: all 0.3s;
+}
+
+#linkedin:hover{
+    background: url("../img/linkedin-hover.png") no-repeat center center;
+    background-size: cover;
+}
+
+.navbarre ul, ol{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbarre{
+    height: 100vh;
+    background-color: #272625;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: #ececec;
+}
+
+.navbarre li{
+    padding: 10px 0px 10px 0px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.navbarre li:active{
+    border-right: 5px solid #F39C12;
+    background-color: black;
+    color: white;
+}
+
+.navbarre a.item{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.navbarre a.item:hover{
+    font-weight: bold;
+    color: #F39C12;
+}
+
+.navbarre ul{
+    display: block;
+    margin: 15vh 0px 0px 0px;
+}
+
+
+
+/* ----- HOME ----- */
+
+.scene ul, ol{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container, #global, #scene, .layer {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+#global{
+    background: url("../img/route.png") no-repeat center center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+}
+
+#neige2{
+    background: url("../img/neige2.png") no-repeat center center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 3;
+}
+
+#neige1{
+    background: url("../img/neige1.png") no-repeat center center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 4;
+}
+
+#titre{
+    background: url("../img/titre.png") no-repeat center center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    z-index: 5;
+}
+
+
+/* ----- ABOUT ----- */
+
+#me{
+    background: url("../img/me.jpg") no-repeat right fixed;
+    width: 100%;
+    height: 90vh;
+    margin-top:30px;
+    -moz-box-shadow: 0px 10px 10px -2px #000000;
+    -webkit-box-shadow: 0px 10px 10px -2px #000000;
+    -o-box-shadow: 0px 10px 10px -2px #000000;
+    box-shadow: 0px 10px 10px -2px #000000;
+}
